@@ -1,0 +1,6 @@
+@import "tailwindcss";
+*,
+*::before,
+*::after {
+  border-color: #d1d5db !important; /* Tailwind's gray-300 */
+}

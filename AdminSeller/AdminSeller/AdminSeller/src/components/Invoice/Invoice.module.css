@@ -1,0 +1,172 @@
+.container {
+  max-width: 750px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  font-family: "Inter", sans-serif;
+  color: #333;
+}
+
+.header {
+  text-align: left;
+  border-bottom: 2px solid #eee;
+  margin-bottom: 1.5rem;
+}
+
+.orderInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+.statusRow {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.iconGreen {
+  color: green;
+  font-size: 1rem;
+}
+
+.status {
+  color: green;
+  font-weight: 600;
+}
+
+.infoRow {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.infoBox {
+  flex: 1;
+  background: #f9fafb;
+  padding: 1rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+.infoHeader {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 0.5rem;
+}
+
+.iconOrange {
+  color: #f97316;
+  font-size: 1.1rem;
+}
+
+.infoBox p {
+  margin: 0.4rem 0;
+}
+
+.table {
+  width: 100%;
+  border: 1px solid gray;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.table th {
+  background: #f3f4f6;
+  text-align: left;
+  padding: 0.8rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.table td {
+  padding: 0.8rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.subtext {
+  color: #6b7280;
+  font-size: 0.85rem;
+}
+
+.summary {
+  display: flex;
+  
+  border-top: 2px solid #f0f0f0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 3rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  background: #f3f4f6;
+}
+
+.summaryValues {
+    margin-top: 5px;
+    /* border: 2px solid; */
+  width: 400px;  
+  text-align: right;
+}
+
+.total {
+  color: #e63946;
+}
+
+.paymentBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff3e0;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.paymentLeft {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.paid {
+  color: green;
+  font-weight: 600;
+}
+
+.footer {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #6b7280;
+  margin-top: 0.5rem;
+}
+
+.printBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin-left: auto ;
+  margin-top:10px ;
+  padding: 0.6rem 1.2rem;
+  background: #f3f4f6;
+  border: 1px solid;
+  background-color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
+.printBtn:hover {
+  background: #e5e7eb;
+}
+.summaryhead{
+    font-size: 20px;
+}
+.divider {
+  border: none;
+  border-top: 1.5px solid #e5e7eb;
+  margin: 0.5rem 0;
+}

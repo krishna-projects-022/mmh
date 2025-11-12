@@ -1,0 +1,222 @@
+/* ========== CONTAINER ========== */
+.container {
+  min-height: 100vh;
+  background-color: #f9fafb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.5rem 1rem;
+  font-family: 'Inter', sans-serif;
+}
+
+/* ========== HEADER ========== */
+.header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.subtitle {
+  color: #6b7280;
+  font-size: 0.9rem;
+  margin-top: 0.25rem;
+}
+
+/* ========== CARD ========== */
+.card {
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 1rem;
+  width: 100%;
+  max-width: 700px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* ========== SECTION TITLES ========== */
+.sectionTitle {
+    
+  font-weight: 600;
+  color: #1f2937;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+/* ========== BADGE STYLES ========== */
+.badgeRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.badge {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.6rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.orange {
+  background: #fff7ed;
+  color: #ea580c;
+}
+
+.blue {
+  background: #eff6ff;
+  color: #2563eb;
+}
+
+.red {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.redLight {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+/* ========== TIMELINE ========== */
+.refund{
+    display: flex !important;
+    flex-direction: row !important;
+    /* justify-content: start; */
+    align-items: center;
+    height: 100px;
+    gap: 10px;
+}
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  position: relative;
+}
+
+/* Each Step (icon + text side-by-side) */
+.timelineStep {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  position: relative;
+}
+
+/* Icon container */
+.iconstyletruck,
+.iconYellowstyle,
+.iconGreenstyle {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* Icon background colors */
+.iconstyletruck {
+  background-color: skyblue;
+}
+
+.iconYellowstyle {
+  background-color: #fbbf58;
+}
+
+.iconGreenstyle {
+  background-color: #93f998;
+}
+.iconPurple{
+    color: rgb(203, 53, 241);
+}
+.iconpurplestyle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: rgb(200, 196, 200); ;
+}
+/* Dotted line below each icon except the last */
+.iconstyletruck::after,
+.iconYellowstyle::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 60px;
+  border-left: 2px dotted #cbd5e1;
+  z-index: 0;
+}
+
+/* No line for last (wallet) */
+.iconGreenstyle::after {
+  content: none;
+}
+
+/* ========== STEP TEXT ========== */
+.stepTitle {
+  font-weight: 600;
+  color: #1f2937;
+  font-size: 0.95rem;
+}
+
+.stepDesc {
+  color: #6b7280;
+  font-size: 0.85rem;
+  margin-top: 0.25rem;
+}
+
+/* ========== FOOTER CARD ========== */
+.footerCard {
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 1rem;
+  width: 100%;
+  max-width: 700px;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.footerTitle {
+  font-weight: 600;
+  color: #1f2937;
+  font-size: 1.1rem;
+}
+
+.footerDesc {
+  color: #6b7280;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+/* ========== BUTTON ========== */
+.button {
+  background-color: #f97316;
+  color: white;
+  font-weight: 500;
+  padding: 0.6rem 1.25rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #ea580c;
+}

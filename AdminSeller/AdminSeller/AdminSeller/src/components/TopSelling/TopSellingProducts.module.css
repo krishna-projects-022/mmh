@@ -1,0 +1,71 @@
+.topSelling {
+  /* margin: 50px 100px; */
+  
+  height: 270px;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px 24px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  max-width: 478px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111827;
+}
+
+
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.image {
+  width: 45px;
+  height: 45px;
+  border-radius: 8px;
+  object-fit: contain;
+  background-color: #f9fafb;
+  padding: 5px;
+  border: 1px solid #f3f4f6;
+}
+
+.name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.sold {
+  font-size: 14px;
+  font-weight: 600;
+  color: #f97316; /* orange */
+}

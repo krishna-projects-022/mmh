@@ -1,0 +1,21 @@
+.dashboard {
+  margin: 50px 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 40px;
+  background-color: #f9fafb;
+  min-height: 100vh;
+}
+
+.aligmentSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 70px; 
+}
+.earningTopselling{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}

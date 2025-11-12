@@ -1,0 +1,67 @@
+.pageWrapper {
+  display: flex;
+  gap: 2rem;
+  background-color: #f9fafb;
+  padding: 0px 4rem;
+}
+
+.container {
+  flex: 3;
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem 3rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+.title {
+    display: flex;
+    padding: 2rem 4rem;
+
+}
+
+.sidebar {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.tipBox,
+.previewBox {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.previewImg {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+.previewTitle {
+  font-weight: 600;
+}
+
+.previewPrice {
+  color: #ff6600;
+  font-weight: 500;
+}
+
+.previewStock {
+  color: #28a745;
+  font-size: 0.9rem;
+}
+.backIcon {
+  /* font-size: 1.5rem; */
+  margin-right: 10px;
+  cursor: pointer;
+  vertical-align: middle;
+  color: #333;
+  transition: color 0.2s ease;
+}
+
+.backIcon:hover {
+  color: #ff6600;
+}

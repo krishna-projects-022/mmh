@@ -1,0 +1,288 @@
+.pageWrapper {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem 3rem;
+  background-color: #f8f9fb;
+  font-family: "Inter", sans-serif;
+}
+
+.mainContent {
+  flex: 3;
+  background: #fff;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+.pageTitle {
+    
+  margin: 30px 70px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: -30px;
+ 
+}
+
+.section {
+  margin-bottom: 2rem;
+}
+
+.section h3 {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.5rem;
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.formGroup label {
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+  color: #555;
+}
+
+.formGroup input,
+.formGroup select,
+.formGroup textarea {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 0.7rem;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border 0.2s ease;
+}
+
+.formGroup input:focus,
+.formGroup select:focus,
+.formGroup textarea:focus {
+  border-color: #007bff;
+}
+
+.imageUpload {
+  margin-top: 1rem;
+}
+
+.uploadBox {
+  border: 2px dashed #ccc;
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  color: #666;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.uploadBox:hover {
+  border-color: #007bff;
+  background: #f9fbff;
+}
+
+.uploadIcon {
+  font-size: 1.8rem;
+  color: #007bff;
+  margin-bottom: 0.5rem;
+}
+
+/* Save Button */
+.saveBtn {
+  margin-left: 400px;
+  background-color: #ff7b00;
+  border: none;
+  color: white;
+  padding: 0.8rem 1.6rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  transition: background 0.3s;
+}
+
+.saveBtn:hover {
+  background-color: #e66a00;
+}
+
+/* Sidebar */
+.sidebar {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.tipCard,
+.previewCard {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.tipCard h4,
+.previewCard h4 {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 0.7rem;
+}
+
+.tipCard p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.previewCard img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
+}
+
+.previewCard p {
+  font-weight: 500;
+  color: #222;
+  margin: 0;
+}
+
+.previewCard span {
+  color: #007bff;
+  font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .pageWrapper {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .sidebar {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .tipCard,
+  .previewCard {
+    flex: 1;
+    min-width: 280px;
+  }
+}
+
+/* Low Stock + Status Styles */
+.inputGroup {
+  margin-top: 1.5rem;
+}
+
+.toggleWrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.lowStockInput {
+  width: 70px;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.lowStockInput:disabled {
+  background-color: #f2f2f2;
+  color: #999;
+}
+
+.row {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.statusGroup {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.statusLabel {
+  font-weight: 500;
+  color: #444;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 42px;
+  height: 22px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  border-radius: 22px;
+  transition: 0.3s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.switch input:checked + .slider {
+  background-color: #e66a00;
+}
+
+.switch input:checked + .slider:before {
+  transform: translateX(20px);
+}
+
+.statusText {
+  font-weight: 500;
+  color: #333;
+}
+
+/* ✅ PRICE FIELD FIX */
+.priceField {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.priceField > div {
+  flex: 1;
+  background: #fff;
+}

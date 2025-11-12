@@ -1,0 +1,218 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.section {
+  border-bottom: 1px solid #f0f0f0;
+  padding-bottom: 1.5rem;
+}
+
+.section h3 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.row {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.inputGroup {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.inputGroup label {
+  font-size: 0.9rem;
+  margin-bottom: 0.3rem;
+  color: #666;
+}
+
+.inputGroup input,
+.inputGroup select,
+.inputGroup textarea {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 0.6rem;
+  font-size: 0.9rem;
+}
+
+.uploadBox {
+  border: 2px dashed #ddd;
+  border-radius: 10px;
+  padding: 2rem;
+  text-align: center;
+  color: #888;
+}
+
+.hint {
+  font-size: 0.8rem;
+  color: #aaa;
+}
+
+.toggleRow {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.buttonRow {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.saveBtn {
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.8rem 2rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.statusGroup {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px; /* adjust width as needed */
+}
+
+.statusLabel {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.toggleWrapper {
+  display: flex;
+ 
+  align-items: center;
+  gap: 8px;
+}
+
+/* ✅ toggle switch styling (same as before) */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 46px;
+  height: 24px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+.switch input:checked + .slider {
+  background-color: #ff6600;
+}
+
+.switch input:checked + .slider:before {
+  transform: translateX(22px);
+}
+
+.statusText {
+  font-weight: 500;
+  color: #333;
+}
+.statusGroup {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* ✅ keeps label on left, toggle on right */
+  width: 100%; /* take full row width */
+}
+
+.statusLabel {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Toggle container */
+.toggleWrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Toggle switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 46px;
+  height: 24px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+.switch input:checked + .slider {
+  background-color: #ff6600;
+}
+
+.switch input:checked + .slider:before {
+  transform: translateX(22px);
+}
+
+.statusText {
+  font-weight: 500;
+  color: #333;
+}
